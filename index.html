@@ -23,7 +23,11 @@
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#"><img src="./images/logo.svg" alt="" /></a>
+          <a href="#">
+            <svg class="logo" width="146" height="24">
+              <use xlink:href="./images/logo.svg#logo"></use>
+            </svg>
+          </a>
           <button class="mobile-nav-toggle" aria-controls="primary-navigation">
             <img class="icon-hamburger" src="./images/icon-hamburger.svg" alt="" aria-hidden="true">
             <img class="icon-close" src="./images/icon-close.svg" alt="" aria-hidden="false">
@@ -143,16 +147,20 @@
       </section>
     </main>
 
-    <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
+    <footer class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100">
       <div class="container">
-        <div class="even-columns">
-          <div>
-            <a href="#"><img src="./images/logo.svg" alt="Manage" /></a>
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-logo-social">
+            <a href="#" aria-label="home">
+              <svg class="logo" width="146" height="24">
+                <use xlink:href="./images/logo.svg#logo"></use>
+              </svg>
+            </a>
             <ul class="social-list" role="list" aria-label="Social links">
               <li><a aria-label="facebook" href="#">
                 <svg class="social-icon">
                   <use xlink:href="./images/social-icons.svg#icon-facebook"></use>
-                </svg></a>
+                </svg></a> 
               </li>
               <li><a aria-label="youtube" href="#">
                 <svg class="social-icon">
@@ -176,7 +184,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="primary-footer-nav">
             <nav class="footer-nav">
               <ul
                 class="footer-list | flow"
@@ -194,12 +202,12 @@
               </ul>
             </nav>
           </div>
-          <div>
+          <div class="primary-footer-form">
             <form action="">
               <input type="email" />
-              <button class="button">Go</button>
-              <p>Copyright 2020. All Rights Reserved</p>
+              <button class="button" data-shadow="none">Go</button>
             </form>
+            <p>Copyright 2020. All Rights Reserved</p>
           </div>
         </div>
       </div>
